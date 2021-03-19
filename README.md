@@ -27,7 +27,7 @@
 * conditional statement
   - bool {...} if  
     > condition(bool) - eq, ne, gt, lt, ge, le  
-      스택 맨위에 있는 두개를 비교한다.
+      스택 맨위에 있는 두개를 비교한다.   
       <img src="/conditional.png" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="conditional statement"></img><br/>
 
   - bool {op1} {op2} ifelse
