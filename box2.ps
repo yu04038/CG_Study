@@ -1,0 +1,24 @@
+%!
+%% x_position, y_position
+/box {
+    moveto
+    100 0 rlineto 72 rotate
+    100 0 rlineto 72 rotate
+    100 0 rlineto 72 rotate
+    100 0 rlineto 72 rotate
+    100 0 rlineto 72 rotate
+
+    closepath
+    2 setlinewidth
+} def
+
+1 1 41 { /i exch def
+    i 5 mul 100 add dup
+    box
+    i 42 mod 20 gt {i 40 div 0 i 40 div setrgbcolor } 
+    { 0 i 40 div i 40 div setrgbcolor }
+    ifelse
+    stroke
+} for
+
+showpage
