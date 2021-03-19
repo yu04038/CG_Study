@@ -25,8 +25,8 @@
 > ex) 1 1 10 {} for -> 1부터 시작해서 10까지 1을 증가시키면서 스택에 집어넣기
 
 * conditional statement
-- bool {...} if
+  - bool {...} if
 > condition(bool) - eq, ne, gt, lt, ge, le
-> 스택 맨위에 있는 두개를 비교한다.
-- bool {op1} {op2} ifelse
+> >스택 맨위에 있는 두개를 비교한다.
+  - bool {op1} {op2} ifelse
 > true일 경우 op1을 실행하고, false일 경우 op2를 실행한다.
