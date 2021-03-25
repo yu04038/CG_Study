@@ -1,0 +1,34 @@
+%!
+%% x_pos, y_pos
+
+/origin {
+    -5 0 moveto 5 0 lineto
+    0 -5 moveto 0 5 lineto
+    1 0 0 setrgbcolor
+    stroke
+} def
+
+/box {
+    %% gsave %%현재 그래픽스 데이터를 save
+    %%0 0 moveto
+    %%100 0 translate
+    %%0 0 lineto
+    %%0 100 translate
+    %%0 0 lineto
+    %%-100 0 translate
+    
+    0 0 moveto
+    100 0 rlineto
+    0 100 rlineto
+    -100 0 rlineto
+    closepath
+    0 0 0 setrgbcolor
+    stroke
+} def
+
+200 200 translate origin box %% 원점을 이동시키는 것!
+%% translate는 매번 바로 다음에 나타나는 vertex마다 작동한다!
+%% translate는 누적되서 작동하므로 여기서 더 translate 함수를 추가하면 200 200 에서부터 시작한다.
+45 rotate origin box
+
+showpage
