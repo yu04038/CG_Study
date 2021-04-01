@@ -21,9 +21,15 @@
 * ==
 >해당 값을 꺼내서 print. 단순히 display해주는 것이 아니라 기존 stack에 pop을 해서 보여주는 것이므로 stack에서는 값이 사라짐.
 
+* add, sub, mul, div, neg, div연산에서 몫만 나오게 하고싶을 경우 idiv, 나머지는 mod
+>stack의 맨 위에 있는 숫자 두개를 더하거나 빼주고 그 결과값을 stack에 넣어준다. ex) 90 100 add == -> 90 + 100의 값이 print되지만 stack에 들어가진 않는다.
+>(postscript는 int나 floating point를 딱히 가리지 않는다.)
 
 * exch
 >스택 상위 2개의 요소의 위치가 교환된다.
+
+* roll
+> {몇번째 객체를?} {어느 방향으로?} 치환할 것인가 ex) 4 -1 roll
 
 * repeat
 >스택에 반복해서 넣는다. ex) 5 {10} repeat -> 10 10 10 10 10
