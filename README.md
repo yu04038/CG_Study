@@ -45,3 +45,7 @@
 
   - bool {op1} {op2} ifelse
     > true일 경우 op1을 실행하고, false일 경우 op2를 실행한다.
+
+* dictionary
+>/name something def
+>/ppi 72 def -> 3 ppi mul == 216
