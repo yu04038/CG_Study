@@ -12,7 +12,7 @@
 * dup
 >스택의 가장 위의 객체를 복사하여 스택에 추가시킨다.
   
-* stack
+* stack, pstack
 >스택 확인!
 
 * exch
