@@ -48,4 +48,4 @@
 
 * dictionary
 >/name something def
->/ppi 72 def -> 3 ppi mul == 216
+ /ppi 72 def -> 3 ppi mul == 216
