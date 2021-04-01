@@ -1,0 +1,45 @@
+%!
+%% x_pos, y_pos
+/circle {
+    0 0 100 0 360 arc stroke
+} def
+
+/ind {
+    -5 -5 moveto
+    5 -5 lineto
+    5 5 lineto
+    -5 5 lineto
+    closepath
+    stroke
+} def
+
+/inds {
+    0 1 11 { gsave 30 mul rotate 0 90 translate ind grestore} for stroke
+} def
+/hour {
+    -5 -5 moveto
+    -5 60 lineto
+    5 60 lineto
+    5 -5 lineto
+    closepath
+    stroke
+} def
+
+/minute {
+    -5 -5 moveto
+    -5 80 lineto
+    5 80 lineto
+    5 -5 lineto
+    closepath
+    stroke
+} def
+100 100 translate   
+
+/aclock { %% input is hh mm
+    circle inds
+    gsave dup -6 mul rotate minute grestore
+    gsave 60 div add -30 mul rotate hour grestore
+} def
+
+10 30 aclock
+showpage
