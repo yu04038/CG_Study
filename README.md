@@ -60,8 +60,8 @@
 > 10 array : 크기가 10인 array 생성   
 > bracket을 열어서도 array를 정의할 수 있다.    
 <img src="img/mark.png" width="300px" height="400px" title="mark" alt="mark"></img><br/>      
-> 후 bracket 닫기! array의 내용을 바꾸고 싶을 경우 index 바꾸고 싶은 내용 put 명령어 사용 -> dup을 할때 object를 바꾸게 되면 다른쪽 object도 따라서 바뀌게 된다.(stack에는 원래 값이 들어있는 것이 아니라 object를 가리키고 있는 것이므로 dup를 할때 dup 한 것과 기존의 것이 같은 object를 가리키고 있기 때문)
-> [2 5 9] get 1 -> 배열에서 1번 index 찾기
-> forall - array에 들어있는 모든 각각에 대해 for loop을 돌면서 {exec}를 실행. ex) 0을 stack에 추가시킨 후 [1 2 3 4 5] {add} forall -> 15
-> aload - array의 값을 하나씩 stack에 넣음.
+> 후 bracket 닫기! array의 내용을 바꾸고 싶을 경우 index 바꾸고 싶은 내용 put 명령어 사용 -> dup을 할때 object를 바꾸게 되면 다른쪽 object도 따라서 바뀌게 된다.(stack에는 원래 값이 들어있는 것이 아니라 object를 가리키고 있는 것이므로 dup를 할때 dup 한 것과 기존의 것이 같은 object를 가리키고 있기 때문)   
+> [2 5 9] get 1 -> 배열에서 1번 index 찾기   
+> forall - array에 들어있는 모든 각각에 대해 for loop을 돌면서 {exec}를 실행. ex) 0을 stack에 추가시킨 후 [1 2 3 4 5] {add} forall -> 15   
+> aload - array의 값을 하나씩 stack에 넣음.   
 > astore - array의 크기만큼 stack에서 가져와서 array에 집어넣는다. ex) array의 크기가 5인 aaa array생성, [1 2 3 4 5 6 7 8 9 10] array에서 aaa astore -> [6 7 8 9 10]이 생성.
