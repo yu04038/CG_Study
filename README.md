@@ -46,7 +46,7 @@
   - bool {...} if  
     > condition(bool) - eq, ne, gt, lt, ge, le  
       스택 맨위에 있는 두개를 비교한다.   
-      <img src="conditional.png" width="300px" height="200px" title="conditional" alt="conditional statement"></img><br/>
+      <img src="img/conditional.png" width="300px" height="200px" title="conditional" alt="conditional statement"></img><br/>
 
   - bool {op1} {op2} ifelse
     > true일 경우 op1을 실행하고, false일 경우 op2를 실행한다.
