@@ -59,4 +59,5 @@
 > object이기 때문에 array안에 array를 집어넣을 수 있다.(2차원, 3차원 array 생성 가능)   
 > 10 array : 크기가 10인 array 생성   
 > bracket을 열어서도 array를 정의할 수 있다.    
-  <img src="img/mark.png" width"300px" height="200px" title="mark" alt="mark"></img><br/>
+
+  <img src="img/mark.png" width"300px" height="200px" title="mark" alt="mark"></img><br/>   
