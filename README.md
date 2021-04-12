@@ -46,7 +46,7 @@
   - bool {...} if  
     > condition(bool) - eq, ne, gt, lt, ge, le  
       스택 맨위에 있는 두개를 비교한다.   
-      <img src="conditional.png" width="300px" height="200px" title="px(픽셀) 크기 설정" alt="conditional statement"></img><br/>
+      <img src="conditional.png" width="300px" height="200px" title="condition" alt="conditional statement"></img><br/>
 
   - bool {op1} {op2} ifelse
     > true일 경우 op1을 실행하고, false일 경우 op2를 실행한다.
@@ -59,3 +59,4 @@
 > object이기 때문에 array안에 array를 집어넣을 수 있다.(2차원, 3차원 array 생성 가능)   
 > 10 array : 크기가 10인 array 생성   
 > bracket을 열어서도 array를 정의할 수 있다. 
+  <img src="mark.png" width"300px" height="200px" title="mark" alt="amrk"></img><br/>
