@@ -1,0 +1,86 @@
+%!
+/NameCard {
+    0 0 moveto
+    0 5 72 mul 2.54 div rlineto % 72 point == 1 inch == 1 inch = 2.54 cm ->  1 cm = 72 / 2.54 point
+    9 72 mul 2.54 div 0 rlineto
+    0 -5 72 mul 2.54 div rlineto
+    closepath
+    fill
+    gsave
+
+    5 72 mul 2.54 div 0 moveto
+    2 72 mul 2.54 div 5 72 mul 2.54 div rlineto % 72 point == 1 inch == 1 inch = 2.54 cm ->  1 cm = 72 / 2.54 point
+    2 72 mul 2.54 div 0 rlineto
+    0 -5 72 mul 2.54 div rlineto
+    closepath
+    0.6 0 0 setrgbcolor
+    fill
+
+    /Bodoni-BoldItalic findfont
+    1 setgray
+    20 scalefont
+    setfont
+    130 100 moveto
+    (Ajou) show
+    130 70 moveto
+    (University) show % University
+    
+    /Times-Roman findfont
+    1 setgray
+    12 scalefont
+    setfont
+    15 15 moveto
+    (YONGJIN JO) show % Name
+
+    /Times-Roman findfont
+    1 setgray
+    10 scalefont
+    setfont
+    15 30 moveto
+    (Postscript Programmer) show % Title
+    
+
+    /Times-Roman findfont
+    10 scalefont
+    setfont
+    130 30 moveto
+    (Phone : 010-9205-1549) show % Phone Number
+    130 15 moveto
+    (Email : yu04038@ajou.ac.kr) show % Email   
+
+    120 40 moveto
+    120 10 lineto
+    1 setgray
+    stroke
+
+    1 1 6 { /i exch def
+        60 90 10 320 i 60 mul sub 420 i 60 mul sub arc
+        closepath
+        1 1 6 div i mul sub 0 0 setrgbcolor
+        fill
+    } for
+
+    1 1 9 { /i exch def
+        60 90 20 340 i 40 mul sub 420 i 40 mul sub arc
+        closepath
+        1 9 div i mul 0 0 setrgbcolor
+        fill
+    } for
+
+    1 1 12 { /i exch def
+        60 90 30 350 i 30 mul sub 420 i 30 mul sub arc
+        closepath
+        1 1 12 div i mul sub 0 0 setrgbcolor
+        fill
+    } for
+    
+    grestore
+} def
+
+/PrintCard {
+    3 { NameCard 0 250 translate} repeat
+    300 -750 translate
+    3 { NameCard 0 250 translate} repeat
+} def
+PrintCard
+showpage
