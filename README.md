@@ -1,7 +1,7 @@
 # 컴퓨터 그래픽스 공부
 
 
-### 최근 수정 : 21/04/01
+### 최근 수정 : 21/04/12
 #### postscipt에도 스택이 존재한다. 
 * count
 >스택의 깊이를 스택의 맨 위에 올려둔다. 예를 들어 스택의 맨 밑에서부터 0, 1, 2, 3, 4가 들어있다고 가정한다면, 5가 스택의 맨위에 올라오게 된다.
@@ -34,8 +34,13 @@
 * repeat
 >스택에 반복해서 넣는다. ex) 5 {10} repeat -> 10 10 10 10 10
 
+* 숫자나 다른 것들을 String으로 바꿔야 할 때
+>String을 define한다. /nstr n(길이를 최대 몇자로 할것인가?) string def -> create string with length of n   
+>nstr cvs 를 이용하여 string으로 바꿔준다.
+
 * for 문
-> ex) 1 1 10 {} for -> 1부터 시작해서 10까지 1을 증가시키면서 스택에 집어넣기
+> ex) 1 1 10 {} for -> 1부터 시작해서 10까지 1을 증가시키면서 스택에 집어넣기   
+> 0을 stack에 집어넣고, 1 1 10 {add} for -> 1부터 10까지의 합이 stack에 들어감. 0을 집어넣는 이유는 처음 stack에 들어갈 때 1과 add되는 수가 없기 때문에 미리 넣어주는 것.
 
 * conditional statement
   - bool {...} if  
@@ -49,3 +54,8 @@
 * dictionary
 >/name something def   
  /ppi 72 def -> 3 ppi mul == 216
+ 
+* array
+> object이기 때문에 array안에 array를 집어넣을 수 있다.(2차원, 3차원 array 생성 가능)   
+> 10 array : 크기가 10인 array 생성   
+> bracket을 열어서도 array를 정의할 수 있다. 
